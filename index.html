@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Estimated course end date & Tuition fees Calculation
+        <span class="badge badge-pill badge-success">2019 Spring</span>
+      </h1>
+
+      <form id="myForm">
+        <!--Total CPS-->
+        <div class="form-group row">
+          <label for="totalCPS" class="col-sm-2 col-form-label"
+            >Total CPS</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              name="totalCPS"
+              id="totalCPS"
+              class="form-control"
+              placeholder="e.g. 144"
+            />
+          </div>
+        </div>
+
+        <!--Complete CPS-->
+        <div class="form-group row">
+          <label for="CompletedCPS" class="col-sm-2 col-form-label"
+            >Completed CPS</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="CompletedCPS"
+              id="CompletedCPS"
+              placeholder="e.g. 48"
+            />
+          </div>
+        </div>
+
+        <!--Tuition Fees Per Subjects-->
+        <div class="form-group row">
+          <label for="SubjectFees" class="col-sm-2 col-form-label"
+            >Subject Tuition Fees</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="SubjectFees"
+              id="SubjectFees"
+              placeholder="e.g. 5775.5"
+            />
+          </div>
+        </div>
+
+        <!--CPS Per Subjects (e.g. 3cps, 6cps, 8cps)-->
+        <div class="form-group row">
+          <label for="SubjectCPS" class="col-sm-2 col-form-label"
+            >Subject CPS</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              name="SubjectCPS"
+              id="SubjectCPS"
+              placeholder="e.g. 6"
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block">
+          Calculate
+        </button>
+      </form>
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h4 class="display-4">Remaing Credit points:</h4>
+          <p id="printRemainigPoints"></p>
+          <h4 class="display-4">Estimated Course end Date:</h4>
+          <p id="printEndDate"></p>
+          <h4 class="display-4">Estimated total tuition Fees:</h4>
+          <p id="printTotalFees"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
