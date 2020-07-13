@@ -57,19 +57,19 @@ function calcLastSession(remainingSession) {
     return "Spring 2021";
   }
   if (3 < remainingSession <= 4) {
-    return "Autumn 2021";
+    return "Autumn 2022";
   }
   if (4 < remainingSession <= 5) {
     return "Spring 2022";
   }
   if (5 < remainingSession <= 6) {
-    return "Autumn 2022";
+    return "Autumn 2023";
   }
   if (6 < remainingSession <= 7) {
     return "Spring 2023";
   }
   if (7 < remainingSession <= 8) {
-    return "Autumn 2023";
+    return "Autumn 2024";
   }
   if (8 < remainingSession <= 9) {
     return "Spring 2024";
