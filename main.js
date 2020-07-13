@@ -50,28 +50,28 @@ function calcLastSession(remainingSession) {
   if (remainingSession <= 1) {
     return "Spring 2020";
   }
-  if (1 < remainingSession <= 2) {
+  if (1 < remainingSession &&  remainingSession <= 2) {
     return "Autumn 2021";
   }
-  if (2 < remainingSession <= 3) {
+  if (2 < remainingSession && remainingSession <= 3) {
     return "Spring 2021";
   }
-  if (3 < remainingSession <= 4) {
+  if (3 < remainingSession && remainingSession <= 4) {
     return "Autumn 2022";
   }
-  if (4 < remainingSession <= 5) {
+  if (4 < remainingSession && remainingSession <= 5) {
     return "Spring 2022";
   }
-  if (5 < remainingSession <= 6) {
+  if (5 < remainingSession && remainingSession <= 6) {
     return "Autumn 2023";
   }
-  if (6 < remainingSession <= 7) {
+  if (6 < remainingSession && remainingSession <= 7) {
     return "Spring 2023";
   }
-  if (7 < remainingSession <= 8) {
+  if (7 < remainingSession && remainingSession <= 8) {
     return "Autumn 2024";
   }
-  if (8 < remainingSession <= 9) {
+  if (8 < remainingSession && remainingSession <= 9) {
     return "Spring 2024";
   }
 }
